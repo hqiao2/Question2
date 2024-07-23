@@ -16,17 +16,24 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
-            <!-- Other activity attributes -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ReceivingData"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.question2.ACTION_SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Page1"
             android:label="Content1"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
 
 
     </application>
